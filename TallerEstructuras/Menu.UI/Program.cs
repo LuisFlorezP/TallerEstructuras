@@ -44,7 +44,10 @@ do
             Console.WriteLine(reloj.Reloj());
             break;
         case 3:
+            Console.Write("\nEnter the number to decompose: ");
+            var number = Convert.ToInt32(Console.ReadLine());
             var factores = new Factores();
+            Console.WriteLine(factores.ResultDecomposition(number));
             break;
         case 4:
             var cosecha = new Cosecha();
