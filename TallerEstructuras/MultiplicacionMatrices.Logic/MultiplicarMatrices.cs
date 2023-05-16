@@ -14,8 +14,6 @@ namespace MultiplicacionMatrices.Logic
         private double[,] A { get; set; }
         private double[,] B { get; set; }
 
-        public MultiplicarMatrices() { }
-
         public MultiplicarMatrices(int m, int n, int p)
         {
             // ************************ CÓDIGO FUNCIONAMIENTO ************************
@@ -52,6 +50,33 @@ namespace MultiplicacionMatrices.Logic
             //B[3, 1] = 6;
         }
 
+        private static double[,] Fill(int x, int y, bool fill)
+        {
+            var matrix = new double[x, y];
+            if (fill)
+            {
+                for (int i = 0; i < matrix.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrix.GetLength(1); j++)
+                    {
+                        var random = new Random();
+                        matrix[i, j] = random.Next(10);
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < matrix.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrix.GetLength(1); j++)
+                    {
+                        matrix[i, j] = 0;
+                    }
+                }
+            }
+            return matrix;
+        }
+
         public string Process()
         {
             var matrix = Fill(M, P, false);
@@ -74,6 +99,11 @@ namespace MultiplicacionMatrices.Logic
                 p = 0;
                 m++;
             }
+            return Print(matrix);
+        }
+
+        private string Print(double[,] matrix)
+        {
             var output = string.Empty;
             output += "*** A ***\n";
             for (int i = 0; i < M; i++)
@@ -103,33 +133,6 @@ namespace MultiplicacionMatrices.Logic
                 output += "\n";
             }
             return output;
-        }
-
-        public static double[,] Fill(int x, int y, bool fill)
-        {
-            var matrix = new double[x, y];
-            if (fill)
-            {
-                for (int i = 0; i < matrix.GetLength(0); i++)
-                {
-                    for (int j = 0; j < matrix.GetLength(1); j++)
-                    {
-                        var random = new Random();
-                        matrix[i, j] = random.Next(10);
-                    }
-                }
-            }
-            else
-            {
-                for (int i = 0; i < matrix.GetLength(0); i++)
-                {
-                    for (int j = 0; j < matrix.GetLength(1); j++)
-                    {
-                        matrix[i, j] = 0;
-                    }
-                }
-            }
-            return matrix;
         }
     }
 }

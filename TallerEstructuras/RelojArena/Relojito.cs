@@ -11,12 +11,27 @@ namespace RelojArena
         public int N { get; set; }
         public int[,] Matrix { get; set; }
 
-        public Relojito() { }
-
         public Relojito(int n)
         {
             N = n;
             Matrix = Fill();
+        }
+
+        private int[,] Fill()
+        {
+            var matrix = new int[N, N];
+            int number = 0, dataDouble = 2;
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    matrix[i, j] = number;
+                    number++;
+                }
+                number = dataDouble;
+                dataDouble += 2;
+            }
+            return matrix;
         }
 
         public string Reloj()
@@ -39,6 +54,11 @@ namespace RelojArena
                     matrix[j, k] = " ";
                 }
             }
+            return Print(matrix);
+        }
+
+        private string Print(string[,] matrix)
+        {
             var output = string.Empty;
             output += "RELOJ DE ARENA\n";
             for (int i = 0; i < N; i++)
@@ -50,23 +70,6 @@ namespace RelojArena
                 output += "\n";
             }
             return output;
-        }
-
-        public int[,] Fill()
-        {
-            var matrix = new int[N, N];
-            int number = 0, dataDouble = 2;
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = 0; j < N; j++)
-                {
-                    matrix[i, j] = number;
-                    number++;
-                }
-                number = dataDouble;
-                dataDouble += 2;
-            }
-            return matrix;
         }
 
         public override string ToString()
