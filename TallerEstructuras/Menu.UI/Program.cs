@@ -33,7 +33,15 @@ do
             Console.WriteLine(matrix.Process());
             break;
         case 2:
-            var reloj = new Relojito();
+            int size;
+            do
+            {
+                Console.Write("\nEnter array order (odd number): ");
+                size = Convert.ToInt32(Console.ReadLine());
+            } while (size % 2 == 0);
+            var reloj = new Relojito(size);
+            Console.Write(reloj);
+            Console.WriteLine(reloj.Reloj());
             break;
         case 3:
             var factores = new Factores();
@@ -47,7 +55,7 @@ do
         case 0:
             break;
         default:
-            Console.WriteLine("\nOption is not valid.");
+            Console.WriteLine("Option is not valid.\n");
             break;
     }
 } while (menu != 0);
