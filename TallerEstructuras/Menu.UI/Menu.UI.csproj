@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ConflictoCaballos.Logic\ConflictoCaballos.Logic.csproj" />
+    <ProjectReference Include="..\CosechandoCaballo\CosechandoCaballo.Logic.csproj" />
+    <ProjectReference Include="..\DescomposicionFactores\DescomposicionFactores.Logic.csproj" />
+    <ProjectReference Include="..\MultiplicacionMatrices.Logic\MultiplicacionMatrices.Logic.csproj" />
+    <ProjectReference Include="..\RelojArena\RelojArena.Logic.csproj" />
+  </ItemGroup>
+
+</Project>

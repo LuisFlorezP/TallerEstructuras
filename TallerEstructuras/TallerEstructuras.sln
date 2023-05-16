@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Menu.UI", "Menu.UI\Menu.UI.csproj", "{C37B1951-FB69-41FC-A1CE-FACC53D24AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplicacionMatrices.Logic", "MultiplicacionMatrices.Logic\MultiplicacionMatrices.Logic.csproj", "{B0A6F26A-0985-493F-877E-BF6E7745CDFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelojArena.Logic", "RelojArena\RelojArena.Logic.csproj", "{E6C3990B-17B7-4F64-BBB3-BD50E02671AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DescomposicionFactores.Logic", "DescomposicionFactores\DescomposicionFactores.Logic.csproj", "{C071D71F-3D91-467D-9834-194FC6394561}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosechandoCaballo.Logic", "CosechandoCaballo\CosechandoCaballo.Logic.csproj", "{AF286F3D-2C06-4246-A6F2-845617BDA9E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConflictoCaballos.Logic", "ConflictoCaballos.Logic\ConflictoCaballos.Logic.csproj", "{AD9D4FD4-7155-4313-B4B2-6D35A4A6D5DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C37B1951-FB69-41FC-A1CE-FACC53D24AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37B1951-FB69-41FC-A1CE-FACC53D24AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37B1951-FB69-41FC-A1CE-FACC53D24AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37B1951-FB69-41FC-A1CE-FACC53D24AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A6F26A-0985-493F-877E-BF6E7745CDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A6F26A-0985-493F-877E-BF6E7745CDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A6F26A-0985-493F-877E-BF6E7745CDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A6F26A-0985-493F-877E-BF6E7745CDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C3990B-17B7-4F64-BBB3-BD50E02671AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C3990B-17B7-4F64-BBB3-BD50E02671AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C3990B-17B7-4F64-BBB3-BD50E02671AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C3990B-17B7-4F64-BBB3-BD50E02671AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C071D71F-3D91-467D-9834-194FC6394561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C071D71F-3D91-467D-9834-194FC6394561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C071D71F-3D91-467D-9834-194FC6394561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C071D71F-3D91-467D-9834-194FC6394561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF286F3D-2C06-4246-A6F2-845617BDA9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF286F3D-2C06-4246-A6F2-845617BDA9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF286F3D-2C06-4246-A6F2-845617BDA9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF286F3D-2C06-4246-A6F2-845617BDA9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD9D4FD4-7155-4313-B4B2-6D35A4A6D5DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9D4FD4-7155-4313-B4B2-6D35A4A6D5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9D4FD4-7155-4313-B4B2-6D35A4A6D5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9D4FD4-7155-4313-B4B2-6D35A4A6D5DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3ABCC7C-04D9-4FD3-BC82-62C26DC58CE7}
+	EndGlobalSection
+EndGlobal
