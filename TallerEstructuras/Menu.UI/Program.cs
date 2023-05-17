@@ -50,10 +50,27 @@ do
             Console.WriteLine(factores.ResultDecomposition(number));
             break;
         case 4:
-            var cosecha = new Cosecha();
+            Console.Write("\nEnter location of the fruits: ");
+            var locations = Console.ReadLine();
+            Console.Write("Enter horse starting position: ");
+            var positionHourse = Console.ReadLine();
+            Console.Write("Enter the horse's movements: ");
+            var indications = Console.ReadLine();
+            var cosecha = new Cosecha(locations, positionHourse, indications);
+            try
+            {
+                Console.WriteLine($"\nThe collected fruits are: {cosecha.ResultHarverst()}\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"\nError: {ex.Message}\n");
+            }
             break;
         case 5:
-            var conflicto = new Conflicto();
+            Console.Write("\nEnter location of horses: ");
+            var hourses = Console.ReadLine();
+            var conflictHorse = new Conflicto(hourses);
+            Console.WriteLine(conflictHorse.ConflictHourse());
             break;
         case 0:
             break;
